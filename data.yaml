@@ -1,8 +1,6 @@
-names = ['damaged', 'not_damaged']
-
-with open("data.yaml", "w") as f:
-    f.write("path: dataset\n")
-    f.write("train: images/train\n")
-    f.write("val: images/train\n")  # optionally split train/val later
-    f.write("names: " + str(names) + "\n")
-
+path: dataset
+train: images/train
+val: images/train
+names:
+  - damaged
+  - not_damaged
